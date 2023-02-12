@@ -10,7 +10,7 @@ const argv = require('yargs/yargs')(process.argv.slice(2))
     .argv;
 
 function usage() {
-    console.log(`npx genHARFile --name "Google" --url "https://google.com" --outputDir out`)
+    console.log(`npx genHARFile --name "Wikipedia" --url "https://www.wikipedia.org"`)
 }
 
 if (!argv.name) {

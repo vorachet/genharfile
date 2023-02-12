@@ -36,8 +36,8 @@ HAR generated in harfiles/Wikipedia.har
 
 This will generate a HAR file for all of the HTTP requests made by the webpage. 
 
-By default, the generated HAR file will be saved to the directory `harfiles/` in the working directory with the filename <Name>.har. 
+By default, the generated HAR file will be saved to the directory `harfiles/` in the working directory with the filename.har. 
 
-License
+## License
 
-This tool is released under the MIT License. See the LICENSE file for more information
+This tool is released under the MIT License.
