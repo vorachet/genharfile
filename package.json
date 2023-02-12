@@ -1,0 +1,31 @@
+{
+  "name": "genharfile",
+  "version": "0.0.2",
+  "description": "Nodejs-based tool for generating HTTP Archive (HAR) files for web requests",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vorachet/genharfile"
+  },
+  "homepage": "https://github.com/vorachet/genharfile#readme",
+  "bin": {
+    "genharfile": "bin/index.js"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "engines": {
+    "node": ">=14",
+    "npm": ">=6"
+  },
+  "author": "Vorachet Jaroensawas",
+  "license": "MIT",
+  "dependencies": {
+    "cli-table": "^0.3.11",
+    "puppeteer": "^19.6.3",
+    "puppeteer-har": "^1.1.2",
+    "yargs": "^17.6.2"
+  },
+  "devDependencies": {
+    "jest": "^29.4.2"
+  }
+}
