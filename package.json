@@ -1,6 +1,6 @@
 {
   "name": "genharfile",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Nodejs-based tool for generating HTTP Archive (HAR) files for web requests",
   "repository": {
     "type": "git",
