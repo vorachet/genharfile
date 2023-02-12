@@ -2,7 +2,7 @@
 const genHARFile = require("../src/genHARFile")
 const argv = require('yargs/yargs')(process.argv.slice(2))
     .usage('Usage: $0 --name [string] --url [string]')
-    .demandOption(['name','url'])
+    .demandOption(['name', 'url'])
     .alias('n', 'name')
     .alias('u', 'url')
     .describe('n', 'HAR Filename to be saved')
@@ -11,8 +11,8 @@ const argv = require('yargs/yargs')(process.argv.slice(2))
 
 start();
 async function start() {
-    await genHARFile({
-        name: argv.name,
-        url: argv.url
-    });
+    await genHARFile(
+        argv.name,
+        argv.url
+    );
 }
