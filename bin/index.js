@@ -1,5 +1,5 @@
 #! /usr/bin/env node
-const genHARFile = require("../src/genHARFile")
+const Program = require("../src/index")
 const argv = require('yargs/yargs')(process.argv.slice(2))
     .usage('Usage: $0 --name [string] --url [string]')
     .demandOption(['name', 'url'])
@@ -11,7 +11,7 @@ const argv = require('yargs/yargs')(process.argv.slice(2))
 
 start();
 async function start() {
-    await genHARFile(
+    await Program(
         argv.name,
         argv.url
     );

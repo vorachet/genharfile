@@ -1,6 +1,6 @@
 {
   "name": "genharfile",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Nodejs-based tool for generating HTTP Archive (HAR) files for web requests",
   "repository": {
     "type": "git",
@@ -10,6 +10,7 @@
   "bugs": {
     "url": "https://github.com/vorachet/genharfile/issues"
   },
+  "main": "index.js",
   "bin": {
     "genharfile": "bin/index.js"
   },

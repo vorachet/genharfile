@@ -6,8 +6,12 @@ const PuppeteerHar = require('puppeteer-har');
 const OUTPUT_DIR = "harfiles";
 
 module.exports = async (name, url) => {
-    if (!name || !url) return "--name and --url cannot be empty";
-
+    if (!name || !url) {
+        const err = "--name and --url cannot be empty";
+        console.error(err);
+        return err;
+    }
+    
     console.log(`outputDir = ${OUTPUT_DIR}, name = ${name}, url = ${url}`);
 
     if (!fs.existsSync(OUTPUT_DIR)) {
